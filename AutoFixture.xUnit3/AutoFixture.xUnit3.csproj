@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net472;$(BaseTargetFrameworks)</TargetFrameworks>
+    <AssemblyTitle>AutoFixture.xUnit.net3</AssemblyTitle>
+    <AssemblyName>AutoFixture.Xunit3</AssemblyName>
+    <RootNamespace>AutoFixture.Xunit3</RootNamespace>
+
+    <!-- NuGet options -->
+    <PackageId>AutoFixture.Xunit3</PackageId>
+    <Title>AutoFixture with xUnit.net v3 data theories</Title>
+    <Description>By leveraging the data theory feature of xUnit.net, this extension turns AutoFixture into a declarative framework for writing unit tests. In many ways it becomes a unit testing DSL (Domain Specific Language).</Description>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3.extensibility.core" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoFixture\AutoFixture.csproj" />
+  </ItemGroup>
+</Project>

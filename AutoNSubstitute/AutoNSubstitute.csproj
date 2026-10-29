@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462;netstandard2.0;$(BaseTargetFrameworks)</TargetFrameworks>
+    <AssemblyTitle>AutoNSubstitute</AssemblyTitle>
+    <AssemblyName>AutoFixture.AutoNSubstitute</AssemblyName>
+    <RootNamespace>AutoFixture.AutoNSubstitute</RootNamespace>
+
+    <!-- NuGet options -->
+    <PackageId>AutoFixture.AutoNSubstitute</PackageId>
+    <Title>AutoFixture with Auto Mocking using NSubstitute</Title>
+    <Description>This extension turns AutoFixture into an Auto-Mocking Container. The mock instances are created by NSubstitute. To use it, add the AutoNSubstituteCustomization to your Fixture instance.</Description>
+
+    <!--  Suppress warning about invalid dependency version in Castle.Core.
+          That is NSubstitute dependency and we cannot fix that somehow. -->
+    <NoWarn>$(NoWarn);NU1603</NoWarn>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NSubstitute" Version="[5.0.0,7.0.0)" />
+  </ItemGroup>
+
+  <!-- Dependencies added due to transitive vulnerabilities in NSubstitute -->
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoFixture\AutoFixture.csproj" />
+  </ItemGroup>
+</Project>

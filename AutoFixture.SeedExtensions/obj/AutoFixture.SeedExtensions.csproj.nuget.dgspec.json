@@ -1,0 +1,178 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture.SeedExtensions/AutoFixture.SeedExtensions.csproj": {}
+  },
+  "projects": {
+    "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture.SeedExtensions/AutoFixture.SeedExtensions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture.SeedExtensions/AutoFixture.SeedExtensions.csproj",
+        "projectName": "AutoFixture.SeedExtensions",
+        "projectPath": "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture.SeedExtensions/AutoFixture.SeedExtensions.csproj",
+        "packagesPath": "/home/worm1337/.nuget/packages/",
+        "outputPath": "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture.SeedExtensions/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/home/worm1337/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture/AutoFixture.csproj": {
+                "projectPath": "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture/AutoFixture.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture/AutoFixture.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture/AutoFixture.csproj",
+        "projectName": "AutoFixture",
+        "projectPath": "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture/AutoFixture.csproj",
+        "packagesPath": "/home/worm1337/.nuget/packages/",
+        "outputPath": "/home/worm1337/RiderProjects/PPOHomeTask/AutoFixture/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/home/worm1337/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Fare": {
+              "target": "Package",
+              "version": "[2.2.2, 3.0.0)"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[10.0.6, )"
+            },
+            "Microsoft.Bcl.HashCode": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Fare": {
+              "target": "Package",
+              "version": "[2.2.2, 3.0.0)"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[10.0.6, )"
+            },
+            "Microsoft.Bcl.HashCode": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "k92OYx8nugI=",
+  "success": true,
+  "projectFilePath": "/home/worm1337/RiderProjects/PPOHomeTask/PPOHomeTask/PPOHomeTask.csproj",
+  "expectedPackageFiles": [
+    "/home/worm1337/.nuget/packages/fare/2.2.2/fare.2.2.2.nupkg.sha512",
+    "/home/worm1337/.nuget/packages/microsoft.bcl.asyncinterfaces/10.0.6/microsoft.bcl.asyncinterfaces.10.0.6.nupkg.sha512",
+    "/home/worm1337/.nuget/packages/microsoft.bcl.hashcode/6.0.0/microsoft.bcl.hashcode.6.0.0.nupkg.sha512",
+    "/home/worm1337/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

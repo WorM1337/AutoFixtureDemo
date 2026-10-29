@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462;$(BaseTargetFrameworks)</TargetFrameworks>
+    <AssemblyTitle>AutoFixture.Idioms</AssemblyTitle>
+    <AssemblyName>AutoFixture.Idioms</AssemblyName>
+    <RootNamespace>AutoFixture.Idioms</RootNamespace>
+
+    <!-- NuGet options -->
+    <PackageId>AutoFixture.Idioms</PackageId>
+    <Title>AutoFixture Idioms</Title>
+    <Description>Ubiquitous use of AutoFixture for unit testing has given rise to a number of idiomatic unit tests - unit tests that tend to follow common templates. The AutoFixture Idioms library encapsulates these idioms into reusable classes and methods.</Description>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Albedo" Version="[2.0.0,3.0.0)"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoFixture\AutoFixture.csproj"/>
+  </ItemGroup>
+</Project>

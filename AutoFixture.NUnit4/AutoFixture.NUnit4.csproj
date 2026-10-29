@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462;$(BaseTargetFrameworks)</TargetFrameworks>
+    <AssemblyTitle>AutoFixture.NUnit4</AssemblyTitle>
+    <AssemblyName>AutoFixture.NUnit4</AssemblyName>
+    <RootNamespace>AutoFixture.NUnit4</RootNamespace>
+
+    <!-- NuGet options -->
+    <PackageId>AutoFixture.NUnit4</PackageId>
+    <Title>AutoFixture with NUnit4</Title>
+    <Description>By leveraging some features of NUnit4, this extension turns AutoFixture into a declarative framework for writing unit tests. In many ways it becomes a unit testing DSL (Domain Specific Language).</Description>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="[4.0.0,5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoFixture\AutoFixture.csproj" />
+  </ItemGroup>
+</Project>

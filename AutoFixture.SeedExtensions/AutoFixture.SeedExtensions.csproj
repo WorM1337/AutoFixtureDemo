@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462;$(BaseTargetFrameworks)</TargetFrameworks>
+    <AssemblyTitle>AutoFixture.SeedExtensions</AssemblyTitle>
+    <AssemblyName>AutoFixture.SeedExtensions</AssemblyName>
+    <RootNamespace>AutoFixture</RootNamespace>
+
+    <!-- NuGet options -->
+    <PackageId>AutoFixture.SeedExtensions</PackageId>
+    <Title>AutoFixture.SeedExtensions</Title>
+    <Description>Extensions for the most common AutoFixture operations to provide overloads with a seed.</Description>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoFixture\AutoFixture.csproj" />
+  </ItemGroup>
+</Project>

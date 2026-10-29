@@ -1,0 +1,89 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "PPOHomeTask/1.0.0": {
+        "dependencies": {
+          "AutoFixture": "1.0.0"
+        },
+        "runtime": {
+          "PPOHomeTask.dll": {}
+        }
+      },
+      "Fare/2.2.2": {
+        "runtime": {
+          "lib/netstandard2.0/Fare.dll": {
+            "assemblyVersion": "2.2.2.0",
+            "fileVersion": "2.2.2.0"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/10.0.6": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "10.0.0.6",
+            "fileVersion": "10.0.626.17701"
+          }
+        }
+      },
+      "Microsoft.Bcl.HashCode/6.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Bcl.HashCode.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.24.56208"
+          }
+        }
+      },
+      "AutoFixture/1.0.0": {
+        "dependencies": {
+          "Fare": "2.2.2",
+          "Microsoft.Bcl.AsyncInterfaces": "10.0.6",
+          "Microsoft.Bcl.HashCode": "6.0.0"
+        },
+        "runtime": {
+          "AutoFixture.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PPOHomeTask/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fare/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DSwNX78zWZtgI7F5O+llezBtZxX9Fp/yr2jZJ4WxBEAdm7gI3wsO+/a/E54QusBAF9z8icv9bmyfWEwKlWdaTg==",
+      "path": "fare/2.2.2",
+      "hashPath": "fare.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.Bcl.AsyncInterfaces/10.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Os4eB/5WwgiBoFpOmQjEpo8sbFzbWrONvfqK52E7pl4YQoIWFlyeWdOxxxPMHNYFCDD3biT5NzDzNZCo/6kDLw==",
+      "path": "microsoft.bcl.asyncinterfaces/10.0.6",
+      "hashPath": "microsoft.bcl.asyncinterfaces.10.0.6.nupkg.sha512"
+    },
+    "Microsoft.Bcl.HashCode/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GI4jcoi6eC9ZhNOQylIBaWOQjyGaR8T6N3tC1u8p3EXfndLCVNNWa+Zp+ocjvvS3kNBN09Zma2HXL0ezO0dRfw==",
+      "path": "microsoft.bcl.hashcode/6.0.0",
+      "hashPath": "microsoft.bcl.hashcode.6.0.0.nupkg.sha512"
+    },
+    "AutoFixture/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

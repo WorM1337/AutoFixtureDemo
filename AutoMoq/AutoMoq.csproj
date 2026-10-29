@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462;netstandard2.0;$(BaseTargetFrameworks)</TargetFrameworks>
+    <AssemblyTitle>AutoMoq</AssemblyTitle>
+    <AssemblyName>AutoFixture.AutoMoq</AssemblyName>
+    <RootNamespace>AutoFixture.AutoMoq</RootNamespace>
+
+    <!-- NuGet options -->
+    <PackageId>AutoFixture.AutoMoq</PackageId>
+    <Title>AutoFixture with Auto Mocking using Moq</Title>
+    <Description>This extension turns AutoFixture into an Auto-Mocking Container. The mock instances are created by Moq. To use it, add the AutoMoqCustomization to your Fixture instance. Read more at http://blog.ploeh.dk/2010/08/19/AutoFixtureAsAnAutomockingContainer.aspx</Description>
+
+    <!--  Suppress warning about invalid dependency version in Castle.Core.
+          That is Moq dependency and we cannot fix that somehow. -->
+    <NoWarn>$(NoWarn);NU1603</NoWarn>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="[4.20.72,5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoFixture\AutoFixture.csproj" />
+  </ItemGroup>
+</Project>

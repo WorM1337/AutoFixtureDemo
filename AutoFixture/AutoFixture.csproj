@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462;netstandard2.0;$(BaseTargetFrameworks)</TargetFrameworks>
+    <AssemblyTitle>AutoFixture</AssemblyTitle>
+    <AssemblyName>AutoFixture</AssemblyName>
+    <RootNamespace>AutoFixture</RootNamespace>
+
+    <!-- NuGet options -->
+    <PackageId>AutoFixture</PackageId>
+    <Title>AutoFixture</Title>
+    <Description>AutoFixture makes it easier for developers to do Test-Driven Development by automating non-relevant Test Fixture Setup, allowing the Test Developer to focus on the essentials of each test case.</Description>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fare" Version="[2.2.2,3.0.0)" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <!-- Dependencies added to support newer BCL types in older version of .NET -->
+  <ItemGroup Condition="'$(TargetFramework)'=='net462' Or '$(TargetFramework)'=='netstandard2.0'">
+    <PackageReference Include="Microsoft.Bcl.HashCode" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="10.0.6" />
+  </ItemGroup>
+</Project>

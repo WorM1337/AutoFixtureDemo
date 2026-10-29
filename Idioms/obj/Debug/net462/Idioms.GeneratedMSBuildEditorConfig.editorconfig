@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = AutoFixture.Idioms
+build_property.ProjectDir = /home/worm1337/RiderProjects/PPOHomeTask/Idioms/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

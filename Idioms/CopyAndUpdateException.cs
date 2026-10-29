@@ -1,0 +1,175 @@
+﻿using System;
+using System.Globalization;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Security;
+
+namespace AutoFixture.Idioms;
+
+/// <summary>
+/// Represents an error about a method that incorrectly implements the idiom tested
+/// by the <see cref="CopyAndUpdateAssertion"/>.
+/// </summary>
+[Serializable]
+public class CopyAndUpdateException : Exception
+{
+    [NonSerialized]
+    private readonly MethodInfo _methodInfo;
+
+    [NonSerialized]
+    private readonly MemberInfo _memberWithInvalidValue;
+
+    [NonSerialized]
+    private ParameterInfo _argumentWithNoMatchingPublicMember;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CopyAndUpdateException"/> class.
+    /// </summary>
+    public CopyAndUpdateException()
+        : base("The 'copy and update' method is ill-behaved.")
+    {
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CopyAndUpdateException"/> class.
+    /// </summary>
+    /// <param name="message">The error message that explains the reason for the exception.</param>
+    /// <param name="methodInfo">The 'copy and update' method which was ill-behaved.</param>
+    public CopyAndUpdateException(string message, MethodInfo methodInfo)
+        : this(message)
+    {
+        _methodInfo = methodInfo;
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CopyAndUpdateException"/> class.
+    /// </summary>
+    /// <param name="methodInfo">The 'copy and update' method which was ill-behaved.</param>
+    /// <param name="memberWithInvalidValue">The member which has the invalid value after copy and update.</param>
+    public CopyAndUpdateException(MethodInfo methodInfo, MemberInfo memberWithInvalidValue)
+        : this(FormatMessageForMethodAndMember(methodInfo, memberWithInvalidValue), methodInfo)
+    {
+        _memberWithInvalidValue = memberWithInvalidValue;
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CopyAndUpdateException"/> class.
+    /// </summary>
+    /// <param name="methodInfo">The 'copy and update' method which was ill-behaved.</param>
+    /// <param name="argumentWithNoMatchingPublicMember">The parameter which has no matching public member.</param>
+    public CopyAndUpdateException(MethodInfo methodInfo, ParameterInfo argumentWithNoMatchingPublicMember)
+        : this(FormatMessageForMethodAndArgument(methodInfo, argumentWithNoMatchingPublicMember), methodInfo)
+    {
+        ArgumentWithNoMatchingPublicMember = argumentWithNoMatchingPublicMember;
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CopyAndUpdateException"/> class.
+    /// </summary>
+    /// <param name="message">
+    /// The error message that explains the reason for the exception.
+    /// </param>
+    public CopyAndUpdateException(string message)
+        : base(message)
+    {
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CopyAndUpdateException"/> class.
+    /// </summary>
+    /// <param name="message">
+    /// The error message that explains the reason for the exception.
+    /// </param>
+    /// <param name="innerException">
+    /// The exception that is the cause of the current exception.
+    /// </param>
+    public CopyAndUpdateException(string message, Exception innerException)
+        : base(message, innerException)
+    {
+    }
+
+#if !NET8_0_OR_GREATER
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CopyAndUpdateException"/> class.
+    /// </summary>
+    /// <param name="info">
+    /// The <see cref="System.Runtime.Serialization.SerializationInfo"/> that holds the
+    /// serialized object data about the exception being thrown.
+    /// </param>
+    /// <param name="context">
+    /// The <see cref="System.Runtime.Serialization.StreamingContext"/> that contains
+    /// contextual information about the source or destination.
+    /// </param>
+    protected CopyAndUpdateException(SerializationInfo info, StreamingContext context)
+        : base(info, context)
+    {
+    }
+#endif
+
+    /// <summary>
+    /// Gets the 'copy and update' method which is ill-behaved.
+    /// </summary>
+    public MethodInfo MethodInfo => _methodInfo;
+
+    /// <summary>
+    /// Gets the member which was found to have an incorrect value.
+    /// </summary>
+    public MemberInfo MemberWithInvalidValue => _memberWithInvalidValue;
+
+    /// <summary>
+    /// Gets the argument of the 'copy and update' method for which no matching public
+    /// member could be found.
+    /// </summary>
+    public ParameterInfo ArgumentWithNoMatchingPublicMember
+    {
+        get => _argumentWithNoMatchingPublicMember;
+        set => _argumentWithNoMatchingPublicMember = value;
+    }
+
+#if !NET8_0_OR_GREATER
+    /// <summary>
+    /// Adds <see cref="PropertyInfo" /> to a
+    /// <see cref="System.Runtime.Serialization.SerializationInfo"/>.
+    /// </summary>
+    /// <param name="info">
+    /// The <see cref="System.Runtime.Serialization.SerializationInfo"/> that holds the
+    /// serialized object data about the exception being thrown.
+    /// </param>
+    /// <param name="context">
+    /// The <see cref="System.Runtime.Serialization.StreamingContext"/> that contains
+    /// contextual information about the source or destination.
+    /// </param>
+    [SecurityCritical]
+    public override void GetObjectData(SerializationInfo info, StreamingContext context)
+    {
+        base.GetObjectData(info, context);
+        info.AddValue("methodInfo", MethodInfo);
+        info.AddValue("memberWithInvalidValue", MemberWithInvalidValue);
+        info.AddValue("argumentWithNoMatchingPublicMember", ArgumentWithNoMatchingPublicMember);
+    }
+#endif
+
+    private static string FormatMessageForMethodAndArgument(MethodInfo methodInfo, ParameterInfo argumentWithNoMatchingPublicMember)
+    {
+        return string.Format(CultureInfo.CurrentCulture,
+            "The method {0} failed a test for having idiomatic copy and update behaviour. " +
+            "No matching public member could be found for the parameter '{1}'.{4}Declaring type: {2}{4}Reflected type: {3}{4}",
+            methodInfo,
+            argumentWithNoMatchingPublicMember,
+            methodInfo.DeclaringType.AssemblyQualifiedName,
+            methodInfo.ReflectedType.AssemblyQualifiedName,
+            Environment.NewLine);
+    }
+
+    private static string FormatMessageForMethodAndMember(MethodInfo methodInfo, MemberInfo memberWithInvalidValue)
+    {
+        return string.Format(CultureInfo.CurrentCulture,
+            "The method {0} failed a test for having idiomatic copy and update behaviour. " +
+            "After execution, the member '{1}' did not have the expected value.{4}Declaring type: {2}{4}Reflected type: {3}{4}",
+            methodInfo,
+            memberWithInvalidValue.Name,
+            methodInfo.DeclaringType.AssemblyQualifiedName,
+            methodInfo.ReflectedType.AssemblyQualifiedName,
+            Environment.NewLine);
+    }
+}
