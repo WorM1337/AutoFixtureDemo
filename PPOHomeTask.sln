@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoNSubstitute", "AutoNSub
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Idioms", "Idioms\Idioms.csproj", "{7FA0E06C-485A-49E6-8D7C-C0BC59A137D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPOHomeTask.Tests", "PPOHomeTask.Tests\PPOHomeTask.Tests.csproj", "{0E9DCD85-E25B-4E3E-9499-5B23159C036C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -136,6 +138,18 @@ Global
 		{7FA0E06C-485A-49E6-8D7C-C0BC59A137D1}.Release|x64.Build.0 = Release|Any CPU
 		{7FA0E06C-485A-49E6-8D7C-C0BC59A137D1}.Release|x86.ActiveCfg = Release|Any CPU
 		{7FA0E06C-485A-49E6-8D7C-C0BC59A137D1}.Release|x86.Build.0 = Release|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Debug|x64.Build.0 = Debug|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Debug|x86.Build.0 = Debug|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Release|x64.ActiveCfg = Release|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Release|x64.Build.0 = Release|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Release|x86.ActiveCfg = Release|Any CPU
+		{0E9DCD85-E25B-4E3E-9499-5B23159C036C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
