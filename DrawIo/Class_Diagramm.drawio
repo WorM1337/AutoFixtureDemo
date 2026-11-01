@@ -4,16 +4,16 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="JxCfXZw3M-72v56EdweS-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Fixture" vertex="1">
-          <mxGeometry height="242" width="420" x="520" y="570" as="geometry" />
+        <mxCell id="JxCfXZw3M-72v56EdweS-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=1;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Fixture" vertex="1">
+          <mxGeometry height="328" width="420" x="1895" y="-340" as="geometry" />
         </mxCell>
-        <mxCell id="JxCfXZw3M-72v56EdweS-2" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Engine: ISpecimenBuilder" vertex="1">
+        <mxCell id="JxCfXZw3M-72v56EdweS-2" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _engine: ISpecimenBuilder" vertex="1">
           <mxGeometry height="26" width="420" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-5" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _muliple: ISpecimenBuilder" vertex="1">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-5" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _multiple: MultipleRelay" vertex="1">
           <mxGeometry height="26" width="420" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-2" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _behaviors: ISpecimenBuilder" vertex="1">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-2" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _behaviors: IList&amp;lt;IBehavior&amp;gt;" vertex="1">
           <mxGeometry height="26" width="420" y="78" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-3" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _customizer: SpecimenBuilderNodeAdapterCollection" vertex="1">
@@ -22,17 +22,20 @@
         <mxCell id="bmRS_h8bcEC0YR5asjmf-4" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _residueCollector: SpecimenBuilderNodeAdapterCollection" vertex="1">
           <mxGeometry height="26" width="420" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-1" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Engine: ISpecimenBuilder" vertex="1">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-1" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _specimenBuilders: IList&amp;lt;ISpecimenBuilder&amp;gt;" vertex="1">
           <mxGeometry height="26" width="420" y="156" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-6" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Engine: ISpecimenBuilder" vertex="1">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-6" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _customizations: IList&amp;lt;ICustomization&amp;gt;" vertex="1">
           <mxGeometry height="26" width="420" y="182" as="geometry" />
         </mxCell>
         <mxCell id="JxCfXZw3M-72v56EdweS-3" parent="JxCfXZw3M-72v56EdweS-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
           <mxGeometry height="8" width="420" y="208" as="geometry" />
         </mxCell>
-        <mxCell id="JxCfXZw3M-72v56EdweS-4" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ method(type): type" vertex="1">
-          <mxGeometry height="26" width="420" y="216" as="geometry" />
+        <mxCell id="JxCfXZw3M-72v56EdweS-4" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Create&amp;lt;T&amp;gt;(): T&lt;br&gt;+ Create(request: object): object&lt;br&gt;+ Customize(customization: ICustomization): void" vertex="1">
+          <mxGeometry height="60" width="420" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-fixture-methods" parent="JxCfXZw3M-72v56EdweS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Add&lt;T&gt;(specimen: T): T&lt;br&gt;+ Build(): ISpecimenBuilder" vertex="1">
+          <mxGeometry height="26" width="420" y="276" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-17" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-13">
           <mxGeometry relative="1" x="0.2164" as="geometry">
@@ -43,11 +46,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-22" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-18">
-          <mxGeometry relative="1" x="-0.2544" as="geometry">
+          <mxGeometry relative="1" x="-0.2585" as="geometry">
             <Array as="points">
-              <mxPoint x="1010" y="200" />
               <mxPoint x="1520" y="200" />
-              <mxPoint x="1520" y="-1070" />
+              <mxPoint x="1520" y="-1090" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -55,40 +57,47 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-7" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MultipleRelay" vertex="1">
-          <mxGeometry height="86" width="290" x="780" y="290" as="geometry" />
+          <mxGeometry height="86" width="350" x="720" y="160" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-8" parent="bmRS_h8bcEC0YR5asjmf-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _count: int" vertex="1">
-          <mxGeometry height="26" width="290" y="26" as="geometry" />
+          <mxGeometry height="26" width="350" y="26" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-9" parent="bmRS_h8bcEC0YR5asjmf-7" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="290" y="52" as="geometry" />
+          <mxGeometry height="8" width="350" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-10" parent="bmRS_h8bcEC0YR5asjmf-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ SetCount(int)" vertex="1">
-          <mxGeometry height="26" width="290" y="60" as="geometry" />
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-10" parent="bmRS_h8bcEC0YR5asjmf-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ SetCount(count: int)" vertex="1">
+          <mxGeometry height="26" width="350" y="60" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-13" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ISpecimenContext" vertex="1">
-          <mxGeometry height="86" width="210" x="490" as="geometry" />
+          <mxGeometry height="102" width="210" x="490" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-14" parent="bmRS_h8bcEC0YR5asjmf-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-14" parent="bmRS_h8bcEC0YR5asjmf-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _builder: ISpecimenBuilder" vertex="1">
           <mxGeometry height="26" width="210" y="26" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-15" parent="bmRS_h8bcEC0YR5asjmf-13" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
           <mxGeometry height="8" width="210" y="52" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-16" parent="bmRS_h8bcEC0YR5asjmf-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Resolve(request: object): object" vertex="1">
-          <mxGeometry height="26" width="210" y="60" as="geometry" />
+          <mxGeometry height="42" width="210" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-138" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-500" y="51" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-18" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ISpecimenBuilder" vertex="1">
-          <mxGeometry height="60" width="340" x="-740" y="-1100" as="geometry" />
+          <mxGeometry height="76" width="340" x="-740" y="-1100" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-20" parent="bmRS_h8bcEC0YR5asjmf-18" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
           <mxGeometry height="8" width="340" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-12" parent="bmRS_h8bcEC0YR5asjmf-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Create(reqest: object, context: ISpecimenContext): object" vertex="1">
-          <mxGeometry height="26" width="340" y="34" as="geometry" />
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-12" parent="bmRS_h8bcEC0YR5asjmf-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Create(request: object, context: ISpecimenContext): object" vertex="1">
+          <mxGeometry height="42" width="340" y="34" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-23" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MultipleRequest" vertex="1">
-          <mxGeometry height="60" width="160" x="1010" y="490" as="geometry" />
+          <mxGeometry height="60" width="160" x="815" y="294" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-24" parent="bmRS_h8bcEC0YR5asjmf-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Request: object { get; }" vertex="1">
           <mxGeometry height="26" width="160" y="26" as="geometry" />
@@ -99,24 +108,22 @@
         <mxCell id="bmRS_h8bcEC0YR5asjmf-32" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmRS_h8bcEC0YR5asjmf-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-33" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-13">
-          <mxGeometry relative="1" x="0.0844" as="geometry">
-            <Array as="points">
-              <mxPoint x="195" y="-40" />
-              <mxPoint x="530" y="-40" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-28" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SpecimenContext" vertex="1">
-          <mxGeometry height="34" width="210" x="90" y="40" as="geometry" />
+          <mxGeometry height="86" width="250" x="90" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-specimen-context-builder" parent="bmRS_h8bcEC0YR5asjmf-28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _builder: ISpecimenBuilder" vertex="1">
+          <mxGeometry height="26" width="250" y="26" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-30" parent="bmRS_h8bcEC0YR5asjmf-28" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="210" y="26" as="geometry" />
+          <mxGeometry height="8" width="250" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-specimen-context-method" parent="bmRS_h8bcEC0YR5asjmf-28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Resolve(request: object): object" vertex="1">
+          <mxGeometry height="26" width="250" y="60" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-34" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=12;" value="Имеет в методе только вызов Create Builder-а" vertex="1">
-          <mxGeometry height="100" width="80" x="190" y="74" as="geometry" />
+          <mxGeometry height="100" width="80" x="220" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-68" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-48">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-68" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmRS_h8bcEC0YR5asjmf-48">
           <mxGeometry relative="1" x="0.1293" as="geometry">
             <Array as="points">
               <mxPoint x="365" y="-360" />
@@ -124,7 +131,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-69" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-44">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-69" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmRS_h8bcEC0YR5asjmf-44">
           <mxGeometry relative="1" x="0.1032" as="geometry">
             <Array as="points">
               <mxPoint x="365" y="-360" />
@@ -132,7 +139,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-70" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-39">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-70" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmRS_h8bcEC0YR5asjmf-39">
           <mxGeometry relative="1" x="0.005" as="geometry">
             <Array as="points">
               <mxPoint x="365" y="-360" />
@@ -140,7 +147,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-71" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-52">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-71" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmRS_h8bcEC0YR5asjmf-52">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="365" y="-360" />
@@ -148,7 +155,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-72" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-56">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-72" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmRS_h8bcEC0YR5asjmf-56">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="365" y="-360" />
@@ -156,7 +163,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-73" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-60">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-73" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmRS_h8bcEC0YR5asjmf-60">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="365" y="-360" />
@@ -164,7 +171,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-74" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-64">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-74" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmRS_h8bcEC0YR5asjmf-64">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="365" y="-360" />
@@ -172,17 +179,25 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-35" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DefaultPrimitiveBuilders" vertex="1">
-          <mxGeometry height="86" width="230" x="250" y="-320" as="geometry" />
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-123" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="PPO-guid-generator">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="365" y="-360" />
+              <mxPoint x="-245" y="-360" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-36" parent="bmRS_h8bcEC0YR5asjmf-35" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
-          <mxGeometry height="26" width="230" y="26" as="geometry" />
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-35" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DefaultPrimitiveBuilders" vertex="1">
+          <mxGeometry height="102" width="265" x="215" y="-320" as="geometry" />
+        </mxCell>
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-36" parent="bmRS_h8bcEC0YR5asjmf-35" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _builders: IEnumerable&amp;lt;ISpecimenBuilder&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="265" y="26" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-37" parent="bmRS_h8bcEC0YR5asjmf-35" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="230" y="52" as="geometry" />
+          <mxGeometry height="8" width="265" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-38" parent="bmRS_h8bcEC0YR5asjmf-35" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetEnumerator(): IEnumerator" vertex="1">
-          <mxGeometry height="26" width="230" y="60" as="geometry" />
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-38" parent="bmRS_h8bcEC0YR5asjmf-35" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetEnumerator(): IEnumerator&amp;lt;ISpecimenBuilder&amp;gt;" vertex="1">
+          <mxGeometry height="42" width="265" y="60" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-92" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-18">
           <mxGeometry relative="1" x="0.1029" as="geometry">
@@ -327,55 +342,6 @@
         <mxCell id="bmRS_h8bcEC0YR5asjmf-67" parent="bmRS_h8bcEC0YR5asjmf-64" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ method(type): type" vertex="1">
           <mxGeometry height="26" width="160" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-75" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/div&gt;ICustomization" vertex="1">
-          <mxGeometry height="100" width="210" x="-900" y="-40" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-76" parent="bmRS_h8bcEC0YR5asjmf-75" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
-          <mxGeometry height="26" width="210" y="40" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-77" parent="bmRS_h8bcEC0YR5asjmf-75" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="210" y="66" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-78" parent="bmRS_h8bcEC0YR5asjmf-75" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+&amp;nbsp;Customize(fixture: IFixture)" vertex="1">
-          <mxGeometry height="26" width="210" y="74" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-88" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-75">
-          <mxGeometry relative="1" x="0.0149" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-79" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="AutoMoqCustomization" vertex="1">
-          <mxGeometry height="116" width="250" x="-940" y="107" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-80" parent="bmRS_h8bcEC0YR5asjmf-79" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ConfigureMembers: bool { get; set; }" vertex="1">
-          <mxGeometry height="26" width="250" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-83" parent="bmRS_h8bcEC0YR5asjmf-79" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GenerateDelegates:&amp;nbsp;bool { get; set; }" vertex="1">
-          <mxGeometry height="26" width="250" y="56" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-81" parent="bmRS_h8bcEC0YR5asjmf-79" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="250" y="82" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-82" parent="bmRS_h8bcEC0YR5asjmf-79" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+&amp;nbsp;Customize(fixture: IFixture)" vertex="1">
-          <mxGeometry height="26" width="250" y="90" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-89" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-18">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-690" y="-122" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-84" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MockPostprocessor" vertex="1">
-          <mxGeometry height="86" width="160" x="-1080" y="-165" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-85" parent="bmRS_h8bcEC0YR5asjmf-84" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
-          <mxGeometry height="26" width="160" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-86" parent="bmRS_h8bcEC0YR5asjmf-84" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="160" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-87" parent="bmRS_h8bcEC0YR5asjmf-84" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ method(type): type" vertex="1">
-          <mxGeometry height="26" width="160" y="60" as="geometry" />
-        </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-102" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-28">
           <mxGeometry relative="1" x="-0.0525" as="geometry">
             <Array as="points">
@@ -403,22 +369,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-97" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SpecimenFactory" vertex="1">
-          <mxGeometry height="138" width="370" x="-460" y="480" as="geometry" />
-        </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-98" parent="bmRS_h8bcEC0YR5asjmf-97" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+&amp;nbsp;" vertex="1">
-          <mxGeometry height="26" width="370" y="26" as="geometry" />
+          <mxGeometry height="112" width="390" x="-460" y="480" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-99" parent="bmRS_h8bcEC0YR5asjmf-97" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="370" y="52" as="geometry" />
+          <mxGeometry height="8" width="390" y="26" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-100" parent="bmRS_h8bcEC0YR5asjmf-97" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;u&gt;+ Create&amp;lt;T&amp;gt;(this ISpecimenBuilder builder): T&lt;/u&gt;" vertex="1">
-          <mxGeometry height="26" width="370" y="60" as="geometry" />
+          <mxGeometry height="26" width="390" y="34" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-101" parent="bmRS_h8bcEC0YR5asjmf-97" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;u&gt;+&amp;nbsp;CreateContext(this ISpecimenBuilder builder): ISpecimenContext&lt;/u&gt;" vertex="1">
-          <mxGeometry height="26" width="370" y="86" as="geometry" />
+          <mxGeometry height="26" width="390" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-104" parent="bmRS_h8bcEC0YR5asjmf-97" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;u&gt;+ Create&amp;lt;T&amp;gt;(this ISpecimenContext builder): T&lt;/u&gt;" vertex="1">
-          <mxGeometry height="26" width="370" y="112" as="geometry" />
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-104" parent="bmRS_h8bcEC0YR5asjmf-97" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;u&gt;+ Create&amp;lt;T&amp;gt;(this ISpecimenContext context): T&lt;/u&gt;" vertex="1">
+          <mxGeometry height="26" width="390" y="86" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-106" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SeededRequest" vertex="1">
           <mxGeometry height="86" width="160" x="-130" y="890" as="geometry" />
@@ -439,28 +402,226 @@
           <mxGeometry height="50" width="120" x="-240" y="730" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-115" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CompositeSpecimenBuilder" vertex="1">
-          <mxGeometry height="86" width="220" x="630" y="990" as="geometry" />
+          <mxGeometry height="102" width="220" x="1995" y="-810" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-116" parent="bmRS_h8bcEC0YR5asjmf-115" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-116" parent="bmRS_h8bcEC0YR5asjmf-115" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _builders: IEnumerable&amp;lt;ISpecimenBuilder&amp;gt;" vertex="1">
           <mxGeometry height="26" width="220" y="26" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-117" parent="bmRS_h8bcEC0YR5asjmf-115" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
           <mxGeometry height="8" width="220" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-118" parent="bmRS_h8bcEC0YR5asjmf-115" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ method(type): type" vertex="1">
-          <mxGeometry height="26" width="220" y="60" as="geometry" />
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-118" parent="bmRS_h8bcEC0YR5asjmf-115" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Create(request: object, context: ISpecimenContext): object&lt;br&gt;+ Compose(builder: ISpecimenBuilder): ISpecimenBuilderNode" vertex="1">
+          <mxGeometry height="42" width="220" y="60" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-119" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ISpecimenBuilderNode" vertex="1">
-          <mxGeometry height="86" width="190" x="1020" y="960" as="geometry" />
+          <mxGeometry height="102" width="190" x="2010" y="-1130" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-120" parent="bmRS_h8bcEC0YR5asjmf-119" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-120" parent="bmRS_h8bcEC0YR5asjmf-119" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _nodes: IEnumerable&amp;lt;ISpecimenBuilderNode&amp;gt;" vertex="1">
           <mxGeometry height="26" width="190" y="26" as="geometry" />
         </mxCell>
         <mxCell id="bmRS_h8bcEC0YR5asjmf-121" parent="bmRS_h8bcEC0YR5asjmf-119" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
           <mxGeometry height="8" width="190" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="bmRS_h8bcEC0YR5asjmf-122" parent="bmRS_h8bcEC0YR5asjmf-119" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ method(type): type" vertex="1">
-          <mxGeometry height="26" width="190" y="60" as="geometry" />
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-122" parent="bmRS_h8bcEC0YR5asjmf-119" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Compose(builder: ISpecimenBuilder): ISpecimenBuilderNode&lt;br&gt;+ GetEnumerator(): IEnumerator&amp;lt;ISpecimenBuilderNode&amp;gt;" vertex="1">
+          <mxGeometry height="42" width="190" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-creation-note" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;" value="Создание объекта:&lt;br&gt;Fixture.Create&amp;lt;T&amp;gt;() передаёт typeof(T) в _graph.&lt;br&gt;Подходящий ISpecimenBuilder создаёт объект.&lt;br&gt;Для зависимостей используется context.Resolve(...).&lt;br&gt;CompositeSpecimenBuilder перебирает builders до первого результата." vertex="1">
+          <mxGeometry height="150" width="300" x="1560" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-creation-request-note" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;" value="Request обычно содержит Type&lt;br&gt;(typeof(T)), но может описывать&lt;br&gt;параметр, свойство или коллекцию." vertex="1">
+          <mxGeometry height="100" width="220" x="827" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-edge-fixture-composite" edge="1" parent="1" source="JxCfXZw3M-72v56EdweS-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=open;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-115">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-edge-composite-node" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-edge-node-builder" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-18">
+          <mxGeometry relative="1" x="-0.2044" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-method-invoker" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MethodInvoker" vertex="1">
+          <mxGeometry height="56" width="450" x="1250" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-method-invoker-members" parent="PPO-method-invoker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ResolveParameters(method: IMethod, context: ISpecimenContext): object[]" vertex="1">
+          <mxGeometry height="30" width="450" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-constructor-query" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ModestConstructorQuery" vertex="1">
+          <mxGeometry height="78" width="340" x="1870" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-constructor-query-members" parent="PPO-constructor-query" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ SelectMethods(type: Type): IEnumerable&amp;lt;IMethod&amp;gt;" vertex="1">
+          <mxGeometry height="52" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-constructor-method" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ConstructorMethod" vertex="1">
+          <mxGeometry height="28" width="130" x="2055" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-auto-properties" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="AutoPropertiesCommand" vertex="1">
+          <mxGeometry height="63" width="285" x="720" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-auto-properties-members" parent="PPO-auto-properties" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ResolveWritableProperties(specimen, context)" vertex="1">
+          <mxGeometry height="37" width="285" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-guid-generator" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="GuidGenerator" vertex="1">
+          <mxGeometry height="52" width="190" x="-340" y="-570" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-guid-generator-members" parent="PPO-guid-generator" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Create(request, context): object" vertex="1">
+          <mxGeometry height="26" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-edge-method-invoker-builder" edge="1" parent="1" source="PPO-method-invoker" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-edge-method-query" edge="1" parent="1" source="PPO-method-invoker" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="PPO-constructor-query">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1890" y="676" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-edge-query-method" edge="1" parent="1" source="PPO-constructor-query" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="PPO-interface-method">
+          <mxGeometry relative="1" x="0.3035" as="geometry">
+            <Array as="points">
+              <mxPoint x="2090" y="670" />
+              <mxPoint x="2090" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-edge-guid-builder" edge="1" parent="1" source="PPO-guid-generator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-18">
+          <mxGeometry relative="1" x="0.1038" as="geometry">
+            <Array as="points">
+              <mxPoint x="-245" y="-660" />
+              <mxPoint x="-440" y="-660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-auto-properties-target" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="AutoPropertiesTarget" vertex="1">
+          <mxGeometry height="52" width="250" x="1450" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-auto-properties-target-members" parent="PPO-auto-properties-target" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Builder: ISpecimenBuilder" vertex="1">
+          <mxGeometry height="26" width="250" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-postprocessor" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Postprocessor" vertex="1">
+          <mxGeometry height="126" width="350" x="1400" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-postprocessor-members" parent="PPO-postprocessor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _builder: ISpecimenBuilder&lt;br&gt;- _command: ISpecimenCommand&lt;br&gt;+ Create(request: object, context: ISpecimenContext): object&lt;br&gt;+ ExecuteCommand(specimen, context)" vertex="1">
+          <mxGeometry height="100" width="350" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-finite-sequence-relay" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FiniteSequenceRelay" vertex="1">
+          <mxGeometry height="86" width="460" x="1090" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-finite-sequence-relay-members" parent="PPO-finite-sequence-relay" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Create(request: FiniteSequenceRequest, context: ISpecimenContext): object&lt;br&gt;+ ResolveItemType(request): Type" vertex="1">
+          <mxGeometry height="60" width="460" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-interface-method-query" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/div&gt;IMethodQuery" vertex="1">
+          <mxGeometry height="74" width="300" x="2220" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-interface-method-query-members" parent="PPO-interface-method-query" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ SelectMethods(type: Type): IEnumerable&amp;lt;IMethod&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-interface-method-query-separator" parent="PPO-interface-method-query" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-interface-method" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/div&gt;IMethod" vertex="1">
+          <mxGeometry height="100" width="310" x="1840" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-interface-method-members" parent="PPO-interface-method" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Parameters: IEnumerable&amp;lt;ParameterInfo&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="310" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-interface-method-separator" parent="PPO-interface-method" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="310" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-131" parent="PPO-interface-method" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ Invoke(parameters: object[]): object&lt;/div&gt;" vertex="1">
+          <mxGeometry height="26" width="310" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-interface-command" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/div&gt;ISpecimenCommand" vertex="1">
+          <mxGeometry height="70" width="360" x="1040" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-interface-command-members" parent="PPO-interface-command" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Execute(specimen: object, context: ISpecimenContext)" vertex="1">
+          <mxGeometry height="26" width="360" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-interface-command-separator" parent="PPO-interface-command" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="360" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-flow-note" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;" value="Полный сценарий:&lt;br&gt;1. Fixture.Create&amp;lt;Order&amp;gt;() создаёт запрос typeof(Order).&lt;br&gt;2. SpecimenContext передаёт запрос в CompositeSpecimenBuilder.&lt;br&gt;3. MethodInvoker через IMethodQuery выбирает ConstructorMethod.&lt;br&gt;4. Параметры конструктора запрашиваются повторно через ISpecimenContext.Resolve(...).&lt;br&gt;5. ConstructorMethod.Invoke(...) создаёт Order.&lt;br&gt;6. Postprocessor и ISpecimenCommand заполняют writable-свойства.&lt;br&gt;7. Fixture возвращает готовый экземпляр." vertex="1">
+          <mxGeometry height="190" width="370" x="2600" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-edge-auto-target-postprocessor" edge="1" parent="1" source="PPO-auto-properties-target" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="PPO-postprocessor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-edge-auto-properties-info" edge="1" parent="1" source="PPO-interface-command" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="bmRS_h8bcEC0YR5asjmf-13">
+          <mxGeometry relative="1" x="0.2213" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-edge-finite-sequence-builder" edge="1" parent="1" source="PPO-finite-sequence-relay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-18">
+          <mxGeometry relative="1" x="-0.0169" as="geometry">
+            <Array as="points">
+              <mxPoint x="-640" y="923" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-edge-specimen-context-interface" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPO-edge-query-interface" edge="1" parent="1" source="PPO-constructor-query" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="PPO-interface-method-query">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2310" y="539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-edge-constructor-method-interface" edge="1" parent="1" source="PPO-constructor-method" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="PPO-interface-method">
+          <mxGeometry relative="1" x="0.1892" as="geometry">
+            <Array as="points">
+              <mxPoint x="2120" y="866" />
+              <mxPoint x="2040" y="866" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-edge-auto-properties-command-interface" edge="1" parent="1" source="PPO-auto-properties" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="PPO-interface-command">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="513" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-edge-postprocessor-command-interface" edge="1" parent="1" source="PPO-postprocessor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="PPO-interface-command">
+          <mxGeometry relative="1" x="0.0914" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="533" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPO-edge-method-invoker-method" edge="1" parent="1" source="PPO-method-invoker" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;" target="PPO-interface-method">
+          <mxGeometry relative="1" x="-0.0495" as="geometry">
+            <Array as="points">
+              <mxPoint x="1870" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-127" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=none;endFill=0;" target="bmRS_h8bcEC0YR5asjmf-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-125" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=19;" value="Последовательно вызывает вложенные builders, пока один из них не вернёт результат, отличный от NoSpecimen." vertex="1">
+          <mxGeometry height="100" width="240" x="1710" y="-817" as="geometry" />
+        </mxCell>
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-137" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="PPO-interface-method">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-132" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="StaticMethod" vertex="1">
+          <mxGeometry height="28" width="120" x="1935" y="996" as="geometry" />
+        </mxCell>
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-136" edge="1" parent="1" source="bmRS_h8bcEC0YR5asjmf-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;dashed=1;endArrow=block;endFill=0;" target="PPO-interface-method">
+          <mxGeometry relative="1" x="0.3179" as="geometry">
+            <Array as="points">
+              <mxPoint x="1835" y="866" />
+              <mxPoint x="1940" y="866" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bmRS_h8bcEC0YR5asjmf-135" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="GenericMethod" vertex="1">
+          <mxGeometry height="28" width="110" x="1780" y="900" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
