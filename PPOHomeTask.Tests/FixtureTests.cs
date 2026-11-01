@@ -127,7 +127,7 @@ public sealed class CustomOrderBuilder : ISpecimenBuilder
         {
             Id = OrderId,
             Customer = customer,
-            Items = new List<OrderItem> { item },
+            Items = [item],
             IsPaid = true
         };
     }
