@@ -1344,7 +1344,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="H0FweeFdm50EP9ncPxmb" name="Диаграмма последовательности">
-    <mxGraphModel dx="2014" dy="1864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2253" dy="2004" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1496,54 +1496,6 @@
         <mxCell id="seq-note-customer" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=15;align=left;verticalAlign=top;fontSize=10;" value="Customer: Id → GuidGenerator; Name/Email → StringSeedRelay → StringGenerator. Затем Customer возвращается команде и присваивается Order.Customer." vertex="1">
           <mxGeometry height="65" width="520" x="535" y="920" as="geometry" />
         </mxCell>
-        <mxCell id="seq-msg-24" edge="1" parent="1" source="seq-relays" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;" target="seq-builders" value="EnumerableRelay → MultipleRequest(OrderItem)">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2075" y="1110" />
-              <mxPoint x="2370" y="1110" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="seq-msg-25" edge="1" parent="1" source="seq-builders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;" target="seq-builders" value="MultipleRelay → FiniteSequenceRequest(OrderItem, 3)">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2370" y="1145" />
-              <mxPoint x="2490" y="1145" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="seq-msg-26" edge="1" parent="1" source="seq-builders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;" target="seq-invoker" value="Resolve(OrderItem) × 3">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2370" y="1180" />
-              <mxPoint x="1060" y="1180" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="seq-msg-27" edge="1" parent="1" source="seq-domain" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;" target="seq-command" value="OrderItem × 3; List&lt;OrderItem&gt;">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2690" y="1215" />
-              <mxPoint x="1320" y="1215" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="seq-msg-29" edge="1" parent="1" source="seq-property-relay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;" target="seq-builders" value="SeededRequest(bool, &quot;IsPaid&quot;) → BooleanSwitch">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1585" y="1305" />
-              <mxPoint x="2370" y="1305" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="seq-msg-30" edge="1" parent="1" source="seq-builders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;" target="seq-domain" value="generated bool; set Order properties">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2370" y="1340" />
-              <mxPoint x="2690" y="1340" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="seq-msg-34" edge="1" parent="1" source="XMdXmsN3-ccvNAPU8pMd-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;dashed=1;fontSize=11;" target="seq-caller" value="Order">
           <mxGeometry relative="1" x="0.0003" as="geometry">
             <Array as="points" />
@@ -1606,9 +1558,6 @@
             <mxPoint x="699" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="seq-act-builders" parent="1" style="rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1">
-          <mxGeometry height="550" width="12" x="2364" y="570" as="geometry" />
-        </mxCell>
         <mxCell id="XMdXmsN3-ccvNAPU8pMd-9" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-6" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;delegate to Postprocessor&lt;/span&gt;">
           <mxGeometry relative="1" width="80" x="-0.0545" as="geometry">
             <Array as="points">
@@ -1628,7 +1577,7 @@
           <mxGeometry height="355" width="10" x="770" y="290" as="geometry" />
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-6" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
-          <mxGeometry height="830" width="10" x="1055" y="330" as="geometry" />
+          <mxGeometry height="1020" width="10" x="1055" y="330" as="geometry" />
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-12" edge="1" parent="1" style="html=1;align=left;spacingLeft=2;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" value="&lt;span style=&quot;text-align: center; background-color: rgb(255, 255, 255);&quot;&gt;Create(typeof(Order))&lt;/span&gt;">
           <mxGeometry relative="1" as="geometry">
@@ -1652,15 +1601,12 @@
         <mxCell id="UBrsukzfJj1O4-WKkZMA-14" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
           <mxGeometry height="80" width="10" x="2720" y="392.5" as="geometry" />
         </mxCell>
-        <mxCell id="UBrsukzfJj1O4-WKkZMA-16" edge="1" parent="1" source="seq-command" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;" target="seq-act-command" value="">
+        <mxCell id="UBrsukzfJj1O4-WKkZMA-16" edge="1" parent="1" source="seq-command" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
             <mxPoint x="1320" y="125" as="sourcePoint" />
-            <mxPoint x="1585" y="125" as="targetPoint" />
+            <mxPoint x="1320" y="750" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="seq-act-command" parent="1" style="rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-          <mxGeometry height="690" width="12" x="1314" y="750" as="geometry" />
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-17" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-14" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-6" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;new Order()&lt;/span&gt;">
           <mxGeometry relative="1" x="0.4864" as="geometry">
@@ -1681,7 +1627,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-19" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#ffe6cc;strokeColor=#d79b00;" value="" vertex="1">
-          <mxGeometry height="642" width="10" x="1350" y="328" as="geometry" />
+          <mxGeometry height="972" width="10" x="1350" y="328" as="geometry" />
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-20" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-19" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-22" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Resolve(PropertyInfo(Order.Id))&lt;/span&gt;">
           <mxGeometry relative="1" width="80" x="0.0692" as="geometry">
@@ -1705,7 +1651,7 @@
           <mxGeometry height="636.25" width="10" x="1620" y="363.75" as="geometry" />
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-23" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
-          <mxGeometry height="690" width="10" x="2100" y="400" as="geometry" />
+          <mxGeometry height="880" width="10" x="2100" y="400" as="geometry" />
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-24" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-23" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-25" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Resolve(typeof(Guid))&lt;/span&gt;">
           <mxGeometry relative="1" width="80" x="-0.3172" as="geometry">
@@ -1717,7 +1663,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-25" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f8cecc;strokeColor=#b85450;" value="" vertex="1">
-          <mxGeometry height="457.5" width="10" x="2400" y="472.5" as="geometry" />
+          <mxGeometry height="720" width="10" x="2400" y="540" as="geometry" />
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-26" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-25" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-19" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;generated Guid&lt;/span&gt;">
           <mxGeometry relative="1" x="0.75" as="geometry">
@@ -1859,23 +1805,14 @@
             <mxPoint x="1900" y="980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UBrsukzfJj1O4-WKkZMA-42" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-23" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;exitX=0;exitY=1;exitDx=0;exitDy=-60;exitPerimeter=0;" target="UBrsukzfJj1O4-WKkZMA-6" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;List → constructor with IEnumerable&lt;/span&gt;">
+        <mxCell id="UBrsukzfJj1O4-WKkZMA-42" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-23" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-6" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;List → constructor with IEnumerable&lt;/span&gt;">
           <mxGeometry relative="1" width="80" x="-0.2657" as="geometry">
             <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="1582.5" y="1030" />
+              <mxPoint x="1582.5" y="1020.0000000000005" />
             </Array>
             <mxPoint x="1680" y="1010" as="sourcePoint" />
             <mxPoint x="1550" y="1010" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="UBrsukzfJj1O4-WKkZMA-43" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-6" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-44" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Resolve(ParameterInfo collection)&lt;/span&gt;">
-          <mxGeometry relative="1" width="80" x="-0.7032" as="geometry">
-            <Array as="points">
-              <mxPoint x="1450" y="1060" />
-            </Array>
-            <mxPoint x="1066" y="1070" as="sourcePoint" />
-            <mxPoint x="1326" y="1070" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="UBrsukzfJj1O4-WKkZMA-44" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
@@ -1889,6 +1826,59 @@
             </Array>
             <mxPoint x="1900" y="1070" as="sourcePoint" />
             <mxPoint x="2150" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UBrsukzfJj1O4-WKkZMA-46" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-23" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-25" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;EnumerableRelay → MultipleRequest(OrderItem)&lt;/span&gt;">
+          <mxGeometry relative="1" width="80" x="0.0345" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2250" y="1110" />
+            </Array>
+            <mxPoint x="2130" y="1060" as="sourcePoint" />
+            <mxPoint x="2330" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UBrsukzfJj1O4-WKkZMA-47" edge="1" parent="1" style="html=1;align=left;spacingLeft=2;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" value="&lt;span style=&quot;text-align: center; background-color: rgb(255, 255, 255);&quot;&gt;MultipleRelay → FiniteSequenceRequest(OrderItem, 3)&lt;/span&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2440" y="1130" />
+              <mxPoint x="2440" y="1160" />
+            </Array>
+            <mxPoint x="2410" y="1130" as="sourcePoint" />
+            <mxPoint x="2415" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UBrsukzfJj1O4-WKkZMA-51" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;" value="Здесь тоже рекурсивно пройдемся. Зайдем в MethodInvoker,&amp;nbsp; чтобы создать объект по конструктору" vertex="1">
+          <mxGeometry height="65" width="230" x="2450" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="UBrsukzfJj1O4-WKkZMA-52" edge="1" parent="1" style="html=1;align=left;spacingLeft=2;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" value="&lt;span style=&quot;text-align: center; background-color: rgb(255, 255, 255);&quot;&gt;Resolve(OrderItem) × 3&lt;/span&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2440" y="1170" />
+              <mxPoint x="2440" y="1200" />
+            </Array>
+            <mxPoint x="2410" y="1170" as="sourcePoint" />
+            <mxPoint x="2415" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UBrsukzfJj1O4-WKkZMA-53" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-25" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-23" value="IEnumerable OrderItem x 3">
+          <mxGeometry relative="1" x="-0.0345" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2270" y="1210" />
+            </Array>
+            <mxPoint x="2220" y="1220" as="sourcePoint" />
+            <mxPoint x="2140" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UBrsukzfJj1O4-WKkZMA-54" edge="1" parent="1" source="UBrsukzfJj1O4-WKkZMA-23" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="UBrsukzfJj1O4-WKkZMA-19" value="new List OrderItem">
+          <mxGeometry relative="1" x="-0.0541" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1890" y="1232.4999999999995" />
+            </Array>
+            <mxPoint x="1970" y="1232.5" as="sourcePoint" />
+            <mxPoint x="1680" y="1232.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
