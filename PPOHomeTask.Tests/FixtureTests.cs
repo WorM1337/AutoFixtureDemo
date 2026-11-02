@@ -19,13 +19,11 @@ public class FixtureTests
         // Assert
         Assert.NotNull(order);
         Assert.NotEqual(Guid.Empty, order.Id);
-        Assert.NotNull(order.Customer);
         Assert.NotEmpty(order.Customer.Name);
-        Assert.NotNull(order.Items);
         Assert.NotEmpty(order.Items);
     }
 
-    [Fact(DisplayName = "Кастомизация создаёт оплаченный заказ с положительной суммой")]
+    [Fact(DisplayName = "Кастомизация создаёт оплаченный заказ с заданной суммой и количеством (как задано в кастомизации)")]
     public void OrderCustomization__OrderRequest__CreatesPaidOrderWithValidData()
     {
         // Arrange
@@ -41,8 +39,8 @@ public class FixtureTests
         Assert.NotEmpty(order.Items);
         Assert.All(order.Items, item =>
         {
-            Assert.True(item.Quantity > 0);
-            Assert.True(item.UnitPrice > 0);
+            Assert.Equal(1, item.Quantity);
+            Assert.Equal(10m, item.UnitPrice);
         });
     }
 
@@ -55,14 +53,12 @@ public class FixtureTests
 
         // Action
         var order = fixture.Create<Order>();
-        var customer = fixture.Create<Customer>();
 
         // Assert
         Assert.Equal(CustomOrderBuilder.OrderId, order.Id);
         Assert.Equal("Order created by CustomOrderBuilder", order.Customer.Name);
         Assert.NotEmpty(order.Items);
-        Assert.NotEqual(Guid.Empty, customer.Id);
-        Assert.NotEmpty(customer.Name);
+        Assert.True(order.IsPaid);
     }
 
     [Fact(DisplayName = "Build настраивает один экземпляр и не меняет Fixture")]
@@ -81,7 +77,7 @@ public class FixtureTests
         var anotherOrder = fixture.Create<Order>();
 
         // Assert
-        Assert.True(order.IsPaid);
+        Assert.NotEqual(order.Id, anotherOrder.Id);
         Assert.Empty(order.Items);
         Assert.NotEmpty(anotherOrder.Items);
     }
